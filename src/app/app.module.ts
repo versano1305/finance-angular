@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {routing} from "./app.routing";
+import {LoginModule} from "./src/login/login.module";
+import {MaterialModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -12,7 +15,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    LoginModule,
+    MaterialModule.forRoot(),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
